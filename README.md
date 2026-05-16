@@ -5,15 +5,6 @@ The project walks through data cleaning, feature engineering, and visualisation 
 
 ---
 
-##  Project Structure
-
-```
-├── Titanic-Data-Exploration.ipynb   # Main analysis notebook
-├── Titanic-Dataset.csv              # Raw dataset
-└── titanic_cleaned.csv              # Cleaned dataset (output)
-```
-
----
 
 ##  What's Inside
 
@@ -36,9 +27,9 @@ The project walks through data cleaning, feature engineering, and visualisation 
 
 ##  Key Insights
 
-1. Female passengers had a survival rate than males. We can suggest that the 'women and children first' evacuation protocol was rigorously followed.
+1. Female passengers had a higher survival rate than males. We can suggest that the 'women and children first' evacuation protocol was rigorously followed.
 
-2. 1st class Passengers had higher survival rate. We can suggest they had better physical access to lifeboats and may have received preferential treatment.
+2. 1st class Passengers had a higher survival rate. We can suggest they had better physical access to lifeboats and may have received preferential treatment.
 
 3.  A 3rd-class woman ⁓50% survival had a higher chance of survival than a 1st-class man ⁓37%. Gender was an overriding factor of survival rather than class.
 
@@ -46,7 +37,7 @@ The project walks through data cleaning, feature engineering, and visualisation 
 
 5.  Passengers with family had a ~50% survival rate, compared to ~30% for solo travellers. Families, especially those with young children, may have been prioritised at lifeboats.
 
-6. Survivors were only marginally younger on average ⁓28 years than non-survivors ⁓30 years
+6. Survivors were only marginally younger on average ⁓28 years, than non-survivors ⁓30 years
 
 ---
 
