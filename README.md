@@ -1,11 +1,11 @@
-# 🚢 Titanic Dataset — Exploratory Data Analysis
+#  Titanic Dataset — Exploratory Data Analysis
 
 A clean, well-documented data exploration of the classic Titanic passenger dataset.  
 The project walks through data cleaning, feature engineering, and visualisation to uncover the social and demographic patterns that determined survival.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── Titanic-Data-Exploration.ipynb   # Main analysis notebook
@@ -15,18 +15,11 @@ The project walks through data cleaning, feature engineering, and visualisation 
 
 ---
 
-## 🔍 What's Inside
+##  What's Inside
 
 ### Data Cleaning
-- **Missing values handled thoughtfully:**
-  - `Age` (~20% missing) → imputed with the **median** to preserve distribution shape
-  - `Cabin` (~77% missing) → **dropped** (too sparse to be useful)
-  - `Embarked` (~0.2% missing) → two rows **removed** (negligible loss)
-- **Duplicate check** confirmed: 0 duplicate rows
 
 ### Feature Engineering
-- Created `family_size` = `SibSp + Parch + 1`  
-- Created `family_group` = `"Alone"` or `"With Family"` for categorical analysis
 
 ### Exploratory Analysis & Visualisations
 | Analysis | Key Finding |
@@ -41,25 +34,23 @@ The project walks through data cleaning, feature engineering, and visualisation 
 
 ---
 
-## 📊 Key Insights
+##  Key Insights
 
-1. **Gender was the dominant predictor.** The "women and children first" evacuation protocol was closely followed — female passengers survived at nearly 4× the rate of males.
+1. Female passengers had a survival rate than males. We can suggest that the 'women and children first' evacuation protocol was rigorously followed.
 
-2. **Class determined access to lifeboats.** Upper-deck placement, earlier alarm notification, and crew prioritisation gave 1st-class passengers a survival rate 2.6× higher than 3rd class.
+2. 1st class Passengers had higher survival rate. We can suggest they had better physical access to lifeboats and may have received preferential treatment.
 
-3. **Gender beat class.** Even a 3rd-class woman had better survival odds (~50%) than a 1st-class man (~37%), showing gender overrode socioeconomic advantage.
+3.  A 3rd-class woman ⁓50% survival had a higher chance of survival than a 1st-class man ⁓37%. Gender was an overriding factor of survival rather than class.
 
-4. **Fare acted as a proxy for wealth and class.** Survivors paid on average **£48** vs **£22** for non-survivors.
+4.  Survivors paid higher fares on average than non-survivors. Since fare directly maps to passenger class, this reinforces finding #2.
 
-5. **Family presence helped.** Passengers travelling with family survived at ~51% — 21 percentage points higher than solo travellers (~30%).
+5.  Passengers with family had a ~50% survival rate, compared to ~30% for solo travellers. Families, especially those with young children, may have been prioritised at lifeboats.
 
-6. **Age was a weak predictor on its own.** Mean age difference between survivors and non-survivors was less than 2 years.
-
-> *The Titanic disaster was not random. Social hierarchy shaped survival to a striking degree — a sobering illustration of inequality under extreme circumstances.*
+6. Survivors were only marginally younger on average ⁓28 years than non-survivors ⁓30 years
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -72,26 +63,12 @@ The project walks through data cleaning, feature engineering, and visualisation 
 
 ---
 
-## ▶️ Getting Started
-
-```bash
-# Clone the repository
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-
-# Install dependencies
-pip install pandas numpy matplotlib seaborn jupyter
-
-# Launch the notebook
-jupyter notebook Titanic-Data-Exploration.ipynb
-```
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
-The Titanic dataset is sourced from [Kaggle's Titanic competition](https://www.kaggle.com/c/titanic).  
-It contains passenger information for 891 of the 2,224 people aboard, including demographics, ticket class, fare, and survival outcome.
+The Titanic dataset is sourced from [Kaggle](https://www.kaggle.com/c/titanic).  
 
 ---
 
